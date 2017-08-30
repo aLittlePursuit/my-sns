@@ -1,0 +1,86 @@
+.change-style {
+    @media (max-width: 991px) {
+        padding-bottom: 20px;
+    }
+}
+
+.detail-wrapper-left {
+    padding: 0 20px;
+    background: #fff;
+}
+
+.cell-block {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dddddd;
+    &:last-child {
+        padding-bottom: 0;
+        border-bottom: none
+    }
+    h2 {
+        padding: 20px 0 15px 0;
+        margin: 0;
+        font-size: 16px;
+    }
+}
+
+.group-author {
+    .group-avatar {
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        border-radius: 50%;
+        background: #9cc96c;
+    }
+}
+
+.hot-artical {
+    .title {
+        vertical-align: top;
+        line-height: 18px;
+    }
+    .front-artical {
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #46c29d;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.hot-person {
+    .hot-person-cell {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .detail-img-wrapper {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            background: #9cc96c;
+            border-radius: 50%;
+        }
+        .hot-name {
+            padding-top: 15px;
+            .hot-count {
+                color: orange;
+            }
+        }
+    }
+}
+
+.new-person {
+    .new-name {
+        margin: 10px 0 20px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .new-person-head {
+        margin: 0 auto;
+    }
+}

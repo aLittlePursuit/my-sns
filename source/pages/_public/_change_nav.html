@@ -1,0 +1,85 @@
+<div class="change-nav clearfix">
+    <div class="change-person-info">
+        <ul class="person-meun clearfix">
+            <li><a class="change-show-search"><i class="fa fa-search"></i></a></li>
+            <li><a><i class="fa fa-bell-o"></i><span class="warm-circle"></span></a></li>
+            <li><a><i class="fa fa-sliders"></i></a></li>
+            <li><a>hi,纪楠<img class="img-circle" src="../../images/core/avatar.png" width="32" height="32" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="change-all-search change-all-search-hook">
+        <form action="">
+            <input type="text" class="form-control search search-hook" placeholder="全站搜索">
+            <button type="submit" class="submit-btn submit-btn-hook">
+                <i class="fa fa-search "></i>
+            </button>
+        </form>
+    </div>
+    <div class="change-part-show">
+        <i class="fa fa-chevron-circle-down fa-show" title="右侧单元" onclick="showPart($(this))"></i>
+    </div>
+</div>
+<script>
+    $(function() {
+        var faShow = $('.fa-show');
+        var showPart = $('.part-right-hook').attr('data-show');
+        if(showPart) {
+            faShow.show();
+        } else {
+            faShow.hide();
+        }
+    });
+    function showPart(obj) {
+        var _partRight = obj.parents('.content-wrapper').find('.part-right-hook');
+        var _stateNum = _partRight.attr('data-state');
+        obj.toggleClass('fa-chevron-circle-down fa-chevron-circle-left');
+        if(_stateNum == 0) {
+            _partRight.fadeIn().attr('data-state','1');
+        } else {
+            _partRight.fadeOut().attr('data-state','0');
+        }
+        changeMainHeight();
+    }
+    // 给主体部分设置最小高度，由右侧脱离文档窗口判断赋值
+    function changeMainHeight() {
+        var _holdValue = 992;
+        var _contentWrapper = $('.content-wrapper-hook');
+        var _partRight = $('.part-right-hook');
+        var _minHeight = _partRight.height();
+        var windowWidth = $(window).width();
+        var _stateNum = _partRight.attr('data-state');
+        if(_minHeight && windowWidth < _holdValue) {
+             _contentWrapper.css('min-height', _minHeight + 80 + 'px');
+        }
+        if(_stateNum == 0) {
+            _contentWrapper.css('min-height', 1);
+        }
+    }
+</script>
+
+<script>
+    $(function() {
+        var showSearchBtn = $('.change-show-search');
+        var searchWrap = $('.change-all-search-hook');
+        var searchBox = searchWrap.find('.search-hook');
+        var submitBtn = searchWrap.find('.submit-btn-hook');
+        showSearchBtn.click(function() {
+            searchWrap.fadeIn().find('.search-hook').focus();
+        });
+        searchBox.blur(function() {
+            searchWrap.fadeOut();
+            searchWrap.attr('data-state',0);
+        });
+        submitBtn.click(function() {
+            if(searchBox.val() != '') {
+                $(this).submit();
+            } else {
+                layer.msg('内容不能为空');
+                return false;
+            }
+        });
+        $(window).resize(function () {
+            searchWrap.hide();
+        });
+    })
+</script>

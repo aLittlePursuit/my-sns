@@ -1,0 +1,27 @@
+.weibo-comment {
+    position: relative;
+    padding: 5px 0;
+    .avatar-info {
+        position: absolute;
+    }
+    .content-info {
+        padding-left: 40px;
+        line-height: 30px;
+        .good {
+            display: none;
+            margin-left: 20px;
+            color: #999;
+        }
+        .comment-replay {
+            display: none;
+        }
+        &:hover {
+            .good {
+                display: inline-block;
+            }
+            .comment-replay {
+                display: inline-block;
+            }
+        }
+    }
+}

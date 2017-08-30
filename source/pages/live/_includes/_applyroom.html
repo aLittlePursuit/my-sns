@@ -1,0 +1,165 @@
+<div class="apply-content">
+    <div class="page-header">
+        <h2 class="page-text">直播间申请</h2>
+    </div>
+    <div class="apply-form form-horizontal">
+        <form id="myform" method="post">
+            <div class="form-group">
+                <label for="realname" class="col-sm-4 control-label">姓名：</label>
+                <div class="col-sm-6">
+                    <p class="form-control-static">纪楠</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-4 control-label">职称：</label>
+                <div class="col-sm-6">
+                    <p class="form-control-static">专家医师</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-4 control-label">性别：</label>
+                <div class="col-sm-6">
+                    <p class="form-control-static">保密</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="catparent" class="col-sm-4 control-label">医学分类：</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="catparent" name="catparent">
+                        <option>请选择</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control" id="catchild" name="category_id">
+                        <option>请选择</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <label for="title" class="col-sm-4 control-label">直播标题：</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control required" id="title" name="title" value="" placeholder="中文输入不超过25个汉字，英文输入不超过50个字符。">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="detail" class="col-sm-4 control-label">直播详情：</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control required" rows="10" id="detail" name="detail" placeholder="直播详情"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="notice" class="col-sm-4 control-label">直播公告：</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control required" rows="10" id="notice" name="notice" placeholder="直播公告"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="launch_time" class="col-sm-4 control-label">开始时间：</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-date time" id="launch_time" name="launch_time"  placeholder="开始时间" readonly="" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="end_time" class="col-sm-4 control-label">结束时间：</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-date time" id="end_time" name="end_time" placeholder="结束时间" readonly="" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-4 control-label">直播照片：</label>
+                <div class="col-sm-6">
+                            <span class="fileinput-button">
+                                <span id="upload_picture_background" name="upload_picture_background" class='btn btn-success w-100px' style="vertical-align:top">上传封面</span>
+                                <span class="fileinput-button-text">
+                                    <p>用于直播 , 分享时选择的封面图片</p>
+                                    <p>支持 : jpg,jpeg,bmp,gif,png格式,大小不超过2M。</p>
+                                </span>
+                                <input type="hidden" name="logo" id="logo" value="{$live_info.logo}" />
+                            </span>
+                    <p>
+                        <img src="../../images/core/test.png"  alt="no pic" height="160" width="232" class="img-thumbnails" id="img-preview"/>
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="room_set"  class="col-sm-4 control-label">房间设置：</label>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="room_set[]" value="1" />禁止发言
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="room_set[]" value="2" />直播预告
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="room_set[]" value="3" />开播提醒
+                            </label>
+                        </div>
+                        <!--添加的同步录播-->
+                        <div class="col">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="room_set[]" value="4" />同步录播
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label class="checkbox-inline ">
+                                <input type="checkbox" name="room_set[]" value="5"  id="needpwd" style=""/>房间密码
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="text" class="form-control form-roomscr-check apply_span_bottom" style="display:none" id="room_pwd" name="room_pwd" placeholder="请输入密码">
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="form-group">
+                <div class="checkbox checkboxs">
+                    <label class="col-sm-4 control-label"></label>
+                    <div class="col-sm-6">
+                        <input type="checkbox" id="iagree" name="iagree">我已阅读并同意<a class="text-success" onclick="agreement()">《医真•直播协议》</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-6 col-sm-offset-4">
+                    <button type="button" id="" class="btn btn-success w-100px" onclick="openDialog()">提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@@include("_liveagreement.html")
+@@include("_applywindow.html")
+<script>
+    function agreement() {
+        layer.open({
+            type: 1,
+            title: '医真•直播协议',
+            shadeClose: false, //点击遮罩关闭层
+            area : ['700px' , '500px'],
+            content: $('#liveAgreement')
+        });
+    }
+    function readAgreement() {
+        layer.closeAll();
+        $('#iagree').get(0).checked = true;
+    }
+    
+    function openDialog() {
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: false,
+            area : ['500px' , ''],
+            shadeClose: false, //点击遮罩关闭层
+            content: $('#dialog-container')
+        });
+    }
+</script>
+

@@ -1,0 +1,52 @@
+<div class="pl-30px">
+    <div class="tab-search clearfix">
+        <ul class="tab-content pull-left">
+            <li><a href="#"  class="active">全站动态</a></li>
+            <li><a href="#">我的关注</a></li>
+            <li><a href="#">热门动态</a></li>
+            <li><a href="#">我的喜欢</a></li>
+        </ul>
+        <div class="search-btn pull-right">
+            <span>搜索</span>
+            <i class="fa fa-search"></i>
+        </div>
+
+        <!--搜索框-->
+        <div class="search-wrap clearfix">
+            <form class="clearfix" action="">
+                <input class="wb-search form-control pull-right" id="search-text" type="text" placeholder="输入您要查找的内容" name="keywords">
+                <button class="btn btn-link btn-sub" type="">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+        // 点击搜索按钮事件
+        var showSearch = $('.search-btn');
+        var hideSearch = $('.wb-search');
+        var result = $('.btn-sub');
+        showSearch.click(function() {
+            $(this).parent().find('.search-wrap').animate({'margin-right':'244px','opacity':1},300,function() {
+                $(this).find('.wb-search').focus();
+            });
+        });
+        // 输入框失去焦点事件
+        hideSearch.blur(function() {
+            $(this).parents('.search-wrap').animate({'margin-right':0,'opacity':0},600);
+        });
+        // 搜索框内容为空时，无操作
+        result.click(function(e) {
+            e.stopPropagation();
+            var text = $(this).parent().find('.wb-search').val();
+            if(text == '') {
+                layer.msg('内容不能为空');
+                return false;
+            } else {
+                $(this).submit();
+            }
+        });
+    })
+</script>

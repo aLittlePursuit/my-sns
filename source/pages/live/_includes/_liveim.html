@@ -1,0 +1,129 @@
+<div class="live-right live-im box-shadow">
+    <div class="im-public im-head">
+        <span class="im-chat">聊天室</span>
+        <span class="im-count">（453人）</span>
+    </div>
+    <div class="im-body">
+        <div class="im-dialog">
+            <div class="show-message clearfix no-self">
+                <div class="avatar">
+                    <img src="../../images/core/avatar.png" width="24" height="24" class="img-circle" alt="">
+                </div>
+                <div class="detail">
+                    <div class="name-wrapper">
+                        <span class="name">华佗</span>
+                        <span class="time">13:50:20</span>
+                    </div>
+                    <div class="text">简单点，说话的方式简单点</div>
+                </div>
+            </div>
+
+            <div class="show-message clearfix no-self">
+                <div class="avatar">
+                    <img src="../../images/core/avatar.png" width="24" height="24" class="img-circle" alt="">
+                </div>
+                <div class="detail">
+                    <div class="name-wrapper">
+                        <span class="name">华佗</span>
+                        <span class="time">13:50:20</span>
+                    </div>
+                    <div class="text">简单点，说话的方式简单点。简单点，说话的方式简单点。简单点，说话的方式简单点。</div>
+                </div>
+            </div>
+
+            <div class="show-message clearfix self">
+                <div class="avatar">
+                    <img src="../../images/core/avatar.png" width="24" height="24" class="img-circle" alt="">
+                </div>
+                <div class="detail">
+                    <div class="name-wrapper">
+                        <span class="name">华佗</span>
+                        <span class="time">13:50:20</span>
+                    </div>
+                    <div class="text">简单点，说话的方式简单点。简单点，说话的方式简单点。简单点，说话的方式简单点。</div>
+                </div>
+            </div>
+
+            <div class="show-message clearfix no-self">
+                <div class="avatar">
+                    <img src="../../images/core/avatar.png" width="24" height="24" class="img-circle" alt="">
+                </div>
+                <div class="detail">
+                    <div class="name-wrapper">
+                        <span class="name">华佗</span>
+                        <span class="time">13:50:20</span>
+                    </div>
+                    <div class="text">简单点，说话的方式简单点</div>
+                </div>
+            </div>
+
+            <div class="show-message clearfix self">
+                <div class="avatar">
+                    <img src="../../images/core/avatar.png" width="24" height="24" class="img-circle" alt="">
+                </div>
+                <div class="detail">
+                    <div class="name-wrapper">
+                        <span class="name">华佗</span>
+                        <span class="time">13:50:20</span>
+                    </div>
+                    <div class="text">简单点，说话的方式简单点</div>
+                </div>
+            </div>
+
+            <!--直播开始提示-->
+            <div class="live-satr">
+                <span>13:50:20</span>直播开始
+            </div>
+        </div>
+    </div>
+    <div class="im-public im-foot">
+        <i class="fa fa-meh-o fa-style"></i>
+        <i class="fa fa-paint-brush fa-style"></i>
+        <div class="message-position">
+            <div class="message-wrapper" contenteditable="true"></div>
+        </div>
+        <a class="btn btn-success send-btn">
+            <i class="fa fa-send"></i>
+        </a>
+    </div>
+</div>
+<script src="../../js/jquery.nicescroll.min.js"></script>
+<script>
+    // 隐藏滚动条
+    $(function() {
+        $(".im-body").niceScroll({cursorborder:"",cursorcolor:"#AAAAAB",boxzoom:false});
+        scrollBottom();
+    });
+    // 点击发送信息按钮事件
+    $(function() {
+        var dialogContent = $('.im-dialog');
+        var sendBtn = $('.send-btn');
+        var messageWrapper = $('.message-wrapper');
+        sendBtn.click(function() {
+            var messageText = messageWrapper.text();
+            var content = '<div class="show-message clearfix self"><div class="avatar"><img src="http://snsoss.yizhen.cn/Uploads/Avatar/0/58de085ecb58a.jpg?x-oss-process=image/resize,m_fill,w_128,h_128,limit_1/auto-orient,0/quality,q_90" width="24" height="24" class="img-circle" alt=""></div> <div class="detail"><div class="name-wrapper"><span class="name">华佗</span><span class="time">13:50:20</span></div><div class="text">'+messageText+'</div></div></div>';
+            if(messageText != '') {
+                dialogContent.append(content);
+                $(".im-body").niceScroll().resize();
+                scrollBottom();
+                messageWrapper.text('');
+            } else {
+                layer.msg('请输入内容');
+                return false;
+            }
+        })
+    });
+    // 滚动到底部方法
+    function scrollBottom() {
+        var hideScrollBar = $('.im-body');
+        var hideScrollBarHeight = hideScrollBar.height();
+        var dialogContent = $('.im-dialog');
+        var dialogContentHeight = dialogContent.height();
+        var scrollBottomHeight = dialogContentHeight - hideScrollBarHeight;
+        if(dialogContentHeight > hideScrollBarHeight) {
+            hideScrollBar.scrollTop(scrollBottomHeight);
+        } else {
+            return false;
+        }
+    }
+</script>

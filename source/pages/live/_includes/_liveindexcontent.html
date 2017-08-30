@@ -1,0 +1,53 @@
+@@include("_livehot.html")
+@@include("_livereadystar.html")
+@@include("_liveliving.html")
+@@include("_liverecorded.html")
+
+<script>
+    // 没有头像显示名称最后字符
+    $(function() {
+        var liveName = $('.live-name');
+        for (i = 0; i < liveName.length; i++) {
+            var nameSplit = liveName.eq(i).text().split('');
+            var nameLenth = nameSplit.length;
+            liveName.eq(i).parents('.hot-people-info').find('.people-avatar > .no-avatar').text(nameSplit[nameLenth - 1]);
+        }
+    });
+
+    // 有职位时显示分割线
+    $(function() {
+        var livePost = $('.live-post');
+        for(i = 0; i < livePost.length; i++) {
+            var livePostText = livePost.eq(i).text();
+            if(livePostText != '') {
+                livePost.eq(i).parent().find('.live-cutline').show();
+            }
+        }
+    });
+
+    //加密视频点击事件
+    function lockVideo() {
+        var index = layer.open({
+            type: 1,
+            title: ' ',
+            area : ['400px' , ''],
+            shadeClose: false, //点击遮罩关闭层
+            content: $('#dialogKey')
+        });
+        $('.btn-ok').click(function() {
+            layer.close(index);
+        })
+    }
+
+
+    //展示视频窗口鼠标移入事件
+    $(function() {
+        var shiftInTarget = $('.hot-recommend');
+        shiftInTarget.on('mouseover', function () {
+            $(this).find('.live-play-mask').show();
+        });
+        shiftInTarget.on('mouseleave', function () {
+            $(this).find('.live-play-mask').hide().parent().find('.live-play-mask-block').show();
+        });
+    });
+</script>

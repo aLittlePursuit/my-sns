@@ -1,0 +1,136 @@
+.live-head {
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 2px;
+    color: #999;
+    .live-right {
+        border-left: 1px solid #f0f0f0;
+        @media (max-width: 992px) {
+            width: 100%;
+            border-left: none;
+        }
+    }
+}
+.live-detail,
+.live-people {
+    padding: 20px;
+}
+.live-detail {
+    .detail-head {
+        margin-bottom: 8px;
+        .title {
+            display: inline-block;
+            max-width: 630px;
+            line-height: 28px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            a {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        .state {
+            display: inline-block;
+            vertical-align: top;
+            margin:3px 0 0 5px;
+            text-align: center;
+            width: 80px;
+            height: 24px;
+            line-height: 20px;
+            border-radius: 12px;
+            font-size: 12px;
+            &.state-living {
+                border: 2px solid #59c8a7;
+                color: #59c8a7;
+            }
+            &.state-noliving {
+                border: 2px solid #ecae55;
+                color: #ecae55;
+            }
+        }
+    }
+    .detail-foot {
+        > span {
+            margin-right: 25px;
+        }
+        .handle {
+            position: relative;
+            margin-right: 0;
+            > a {
+                margin-left: 15px;
+                color: #999;
+                .fa-star-o {
+                    color: #ecae55;
+                }
+                .fa-share-alt {
+                    color: #59c8a7;
+                }
+            }
+        }
+    }
+}
+.live-people {
+    .avatar,
+    .name-wrap {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .avatar {
+        position: relative;
+        margin-right: 5px;
+        overflow: hidden;
+        border-radius: 50%;
+        .anchor-hint {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 44px;
+            width: 64px;
+            height: 64px;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 50%;
+            background: #ecae55;
+        }
+    }
+    .name-wrap {
+        .name {
+            width: 80px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    .attention {
+        position: relative;
+        margin-top: 16px;
+        .fans-num {
+            display: inline-block;
+            padding: 0 5px;
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            height: 16px;
+            line-height: 16px;
+            font-size: 12px;
+            background: red;
+            border-radius: 8px;
+            color: #fff;
+        }
+        &.btn-link {
+            border-color: #59c8a7;
+            color: #59c8a7;
+            background: transparent;
+            &:hover {
+                background: transparent;
+            }
+        }
+    }
+}
+
+
+
+
+

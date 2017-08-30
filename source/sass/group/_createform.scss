@@ -1,0 +1,28 @@
+form.create-group {
+    label.name {
+        margin-bottom: 0;
+        line-height: 32px;
+        &.name-add {
+            line-height: 22px;
+        }
+        &.name-other {
+            line-height: 30px;
+        }
+    }
+    .choose-group {
+        margin-right: 10px;
+        vertical-align: top;
+        line-height: 22px;
+    }
+    .go-back {
+        margin-right: 5px;
+        background: #fff;
+        color: #59c8a7;
+        border-color: #59c8a7;
+        text-shadow: none;
+        &:hover {
+            background: #f4f4f4;
+        }
+    }
+}
+

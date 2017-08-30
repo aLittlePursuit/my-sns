@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    @@include("../_public/_head.html", {"title": "黑名单"})
+    <link rel="stylesheet" href="../../css/live.min.css">
+</head>
+@@include("../_public/_js.html")
+<body>
+@@include("../_public/_nav.html")
+<div class="content-wrapper content-wrapper-add content-wrapper-hook clearfix">
+    <!--浏览器宽度小于992时导航栏右半部结构切换-->
+    @@include("../_public/_change_nav.html")
+    @@include("_includes/_admin_everynav.html")
+    @@include("_includes/_blacklist.html")
+</div>
+@@include("../_public/_footer.html")
+@@include("../_public/_backtop.html")
+</body>
+</html>

@@ -1,0 +1,77 @@
+.height-auto {
+    height: auto !important;
+}
+
+.cell-foot {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    .fa {
+        font-size: 14px;
+    }
+    .cell-left {
+        display: inline-block;
+        color: #999999;
+        .study,.discuss {
+            display: inline-block;
+            text-align: center;
+            padding: 0 5px;
+            line-height: 18px;
+        }
+        .study {
+            border: 1px solid #9dc970;
+            color: #9dc970;
+        }
+        .discuss {
+            border: 1px solid #f39c11;
+            color: #f39c11;
+        }
+    }
+    .cell-right {
+        float: right;
+        a.text-color1,
+        a.text-color1:focus {
+            color: #59c8a7;
+        }
+        a.text-color2,
+        a.text-color2:focus {
+            color: #9dc970;
+        }
+        a.text-color3,
+        a.text-color3:focus {
+            color: #59bcda;
+        }
+        a.text-color4,
+        a.text-color4:focus {
+            color: #f39c11;
+        }
+        .count {
+            display: inline-block;
+            max-width: 40px;
+        }
+        .time {
+            position: relative;
+            padding-left: 20px;
+            color: #999;
+            &:before {
+                position: absolute;
+                top: 2px;
+                left: 10px;
+                width: 1px;
+                height: 10px;
+                content: '';
+                background: #eee;
+            }
+        }
+    }
+}
+
+.hold-text {
+    height: 100px;
+    overflow: hidden;
+}
+.check-all {
+    display: none;
+    color: #999;
+    cursor: pointer;
+}

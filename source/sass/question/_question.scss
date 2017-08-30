@@ -1,0 +1,60 @@
+.question-detail {
+    padding-top: 20px;
+    border-bottom: 1px solid #eee;
+    .cell-head {
+        .study,.discuss {
+            display: inline-block;
+            text-align: center;
+            padding: 0 5px;
+            line-height: 18px;
+        }
+        .study {
+            border: 1px solid #9dc970;
+            color: #9dc970;
+        }
+        .discuss {
+            border: 1px solid #f39c11;
+            color: #f39c11;
+        }
+    }
+
+    .content {
+        .question {
+            font-weight: 700;
+        }
+    }
+
+    .cell-foot {
+        .cell-left {
+            > span {
+                position: relative;
+                padding: 0 10px;
+                &:before {
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+                    content: '';
+                    width: 1px;
+                    height: 10px;
+                    background: #eee;
+                }
+                &:first-child {
+                    padding-left: 0;
+                    &:before {
+                        width: 0;
+                    }
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+        .cell-right {
+            > a {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+

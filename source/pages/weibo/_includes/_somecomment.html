@@ -1,0 +1,19 @@
+<div class="comment-area">
+    <input type="hidden"  name="reply_id" value="0"/>
+    <input type="text" placeholder="评论（Ctrl+Enter）" class="comment-input form-control">
+    <div class="send-wrapper">
+        <a class="emot" onclick="insertFace($(this))">
+            <i class="fa fa-smile-o"></i>
+        </a>
+        <a>
+            <i class="fa fa-send"></i>
+        </a>
+    </div>
+</div>
+<div class="weibo-comment-list">
+    @@include("_comment.html")
+</div>
+<a class="loadding-more">
+    <i class="fa fa-angle-double-down "></i>
+</a>
+

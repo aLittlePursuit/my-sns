@@ -1,0 +1,187 @@
+.detail-wrapper-right {
+    padding: 0 30px;
+    background: #fff;
+}
+
+.all-keshilist {
+    display: flex;
+    position: relative;
+    padding-bottom: 12px;
+    .init-keshi {
+        flex: 1;
+        margin-left: -5px;
+        color: #666666;
+        width: 490px;
+        height: 31px;
+        overflow: hidden;
+        &.init-keshi-other {
+            height: auto;
+        }
+        .cell-keshi {
+            display: inline-block;
+            position: relative;
+            padding: 5px 10px 5px 5px;
+            &:hover a {
+                color: #59c8a7;
+            }
+            a.active {
+                color: #59c8a7;
+            }
+            &:after {
+                position: absolute;
+                top: 9px;
+                right: 0;
+                content: '';
+                width: 1px;
+                height: 10px;
+                background: #dadada;
+            }
+            &:last-child:after {
+                width: 0;
+            }
+        }
+    }
+    .choose-time {
+        flex: 0 0 120px;
+        position: relative;
+        width: 120px;
+        .btn-down {
+            display: none;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 28px;
+            border: 1px solid #dadada;
+            border-radius: 2px;
+            cursor: pointer;
+            color: #666666;
+        }
+        .dropdown-toggle {
+            padding: 0 6px;
+            height: 30px;
+            line-height: 28px;
+            color: #666666;
+            outline: none;
+            border: 1px solid #dadada;
+            border-radius: 2px;
+            cursor: pointer;
+            &:hover {
+                background: #59c8a7;
+                border-color: #59c8a7;
+                color: #fff;
+            }
+        }
+        .dropdown-menu {
+            padding: 0;
+            min-width: 120px !important;
+            border-color: #dadada;
+            a {
+                padding: 2px 15px !important;
+                color: #666666;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.tiezi-list {
+    padding: 20px 0;
+    border-top: 1px solid #e6e6e6;
+    .tiezi-title {
+        margin-bottom: 20px;
+        a {
+            vertical-align: top;
+            line-height: 16px;
+            color: #333333;
+            font-size: 16px;
+        }
+        &:hover a {
+            color: #59c8a7 !important;
+        }
+    }
+    .tiezi-name {
+        color: #999999;
+        font-size: 12px;
+        .fa {
+            font-size: 14px;
+        }
+        .tiezi-name-left {
+            color: #999999;
+            &:hover {
+                color: #9cc96c
+            }
+        }
+        .time,
+        .replay-time {
+            padding-left: 15px;
+        }
+        .tiezi-name-right {
+            span {
+                color: #999999;
+            }
+            .view-count {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.recent-news {
+    position: relative;
+    padding: 10px 0;
+    .avatar {
+        position: absolute;
+        a {
+            display: inline-block;
+        }
+    }
+    .content {
+        padding-left: 65px;
+        min-height: 50px;
+        .info {
+            line-height: 50px;
+            a:hover {
+                color: #59c8a7;
+            }
+        }
+        .text {
+            padding: 10px;
+            background: #f4f4f4;
+        }
+    }
+}
+
+.person-card {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    width: 100%;
+    background: #f4f4f4;
+    .image {
+        padding: 0 15px;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        border-right: 1px dashed #cccccc
+    }
+    .main-name {
+        padding-left: 90px;
+        padding-top: 8px;
+        height: 60px;
+        overflow: hidden;
+        .name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 16px;
+            a {
+                color: #333;
+            }
+        }
+        .post {
+            color: #666;
+        }
+    }
+}

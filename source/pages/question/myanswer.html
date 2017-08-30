@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    @@include("../_public/_head.html", {"title": "我的回答"})
+    <link rel="stylesheet" href="../../css/question.min.css">
+</head>
+@@include("../_public/_js.html")
+<body>
+@@include("../_public/_nav.html")
+<div class="content-wrapper content-wrapper-add content-wrapper-hook clearfix">
+    <!--浏览器宽度小于992时导航栏右半部结构切换-->
+    @@include("../_public/_change_nav.html")
+    <!--自定义样式左右结构-->
+    <div class="part-left">
+        @@include("_includes/_myanswernav.html")
+        <div class="cell">
+            @@include("_includes/_myanswerlist.html")
+            @@include("_includes/_myanswerlist.html")
+            @@include("_includes/_myanswerlist.html")
+            @@include("_includes/_myanswerlist.html")
+        </div>
+    </div>
+    <div class="part-right part-right-hook" data-state="0" data-show="true">
+        <div class="cell mb-20px">
+            <div class="topic-title mt--10px clearfix">
+                <div class="title-wrap">
+                    <i class="fa fa-question-circle"></i>推荐问题
+                </div>
+                <div class="title-wrap pull-right">
+                    <a href="#">换一批</a>
+                </div>
+            </div>
+            @@include("_includes/_recommendlist.html")
+        </div>
+        <div class="quiz">
+            <a href="" class="btn btn-success btn-quiz">
+                <i class="fa fa-edit"></i> 我要提问
+            </a>
+        </div>
+    </div>
+</div>
+@@include("../_public/_footer.html")
+@@include("../_public/_backtop.html")
+</body>
+</html>

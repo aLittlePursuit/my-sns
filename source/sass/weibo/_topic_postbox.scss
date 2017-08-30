@@ -1,0 +1,43 @@
+.topic-head-info {
+    border-radius: 3px;
+    .cover-wrap {
+        width: 128px;
+        height: 128px;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    .info-wrap {
+        padding: 0 20px;
+        min-height: 128px;
+        .t-name {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .t-intro {
+            font-size: 14px;
+            color: #888;
+        }
+        .common-btn {
+            display: inline-block;
+            padding: 5px 15px;
+            border: 1px solid #d9d9d9;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+            border-radius: 2px;
+            margin-right: 10px;
+            overflow: hidden;
+        }
+        .send-topic-wb {
+            background-color: #19bca1;
+            color: #ffffff;
+        }
+        .send-topic-wb {
+            &:hover {
+                background-color: #17ae95;
+            }
+            .fa {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+

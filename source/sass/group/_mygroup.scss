@@ -1,0 +1,98 @@
+.artical-wrapper {
+    .image {
+        height: 126px;
+        overflow: hidden;
+    }
+
+    .content {
+        .title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            > a {
+                color: #333;
+                font-size: 16px;
+            }
+            &:hover {
+                > a {
+                    color: #59c8a7;
+                }
+            }
+        }
+        .text {
+            overflow: hidden;
+            text-indent: 2em;
+            word-break: break-all;
+        }
+        .come-from {
+            font-size: 12px;
+            color: #999999;
+            .address {
+                color: #59c8a7;
+            }
+        }
+    }
+}
+
+.new-artical {
+    padding: 20px 30px;
+    background: #fff;
+    &:hover {
+        background: #f2f7fa;
+    }
+    .content {
+        height: 126px;
+        overflow: hidden;
+        .text {
+            height: 86px;
+        }
+    }
+}
+
+.i-like {
+    padding: 10px 30px;
+    background: #fff;
+    .content {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #f4f4f4;
+        .title {
+            margin-bottom: 15px;
+        }
+        .come-from {
+            .love {
+                color: #9dc970;
+                .count {
+                    display: inline-block;
+                    min-width: 20px;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+
+.boutique-artical {
+    padding: 10px 30px;
+    background: #fff;
+    .content {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #f4f4f4;
+        .title {
+            margin-bottom: 15px;
+            .icon {
+                margin-right: 5px;
+            }
+            > a {
+                vertical-align: top;
+                line-height: 17px;
+            }
+        }
+        .text {
+            margin-bottom: 10px;
+            min-height: 86px;
+        }
+    }
+}
+
+

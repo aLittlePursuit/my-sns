@@ -1,0 +1,178 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$icons-accurad-name: 'icons-accurad';
+$icons-accurad-x: 166px;
+$icons-accurad-y: 120px;
+$icons-accurad-offset-x: -166px;
+$icons-accurad-offset-y: -120px;
+$icons-accurad-width: 50px;
+$icons-accurad-height: 50px;
+$icons-accurad-total-width: 340px;
+$icons-accurad-total-height: 210px;
+$icons-accurad-image: '../../images/core/sprite-core.png';
+$icons-accurad: (166px, 120px, -166px, -120px, 50px, 50px, 340px, 210px, '../../images/core/sprite-core.png', 'icons-accurad', );
+$icons-checked-name: 'icons-checked';
+$icons-checked-x: 46px;
+$icons-checked-y: 120px;
+$icons-checked-offset-x: -46px;
+$icons-checked-offset-y: -120px;
+$icons-checked-width: 60px;
+$icons-checked-height: 60px;
+$icons-checked-total-width: 340px;
+$icons-checked-total-height: 210px;
+$icons-checked-image: '../../images/core/sprite-core.png';
+$icons-checked: (46px, 120px, -46px, -120px, 60px, 60px, 340px, 210px, '../../images/core/sprite-core.png', 'icons-checked', );
+$icons-checking-name: 'icons-checking';
+$icons-checking-x: 106px;
+$icons-checking-y: 120px;
+$icons-checking-offset-x: -106px;
+$icons-checking-offset-y: -120px;
+$icons-checking-width: 60px;
+$icons-checking-height: 60px;
+$icons-checking-total-width: 340px;
+$icons-checking-total-height: 210px;
+$icons-checking-image: '../../images/core/sprite-core.png';
+$icons-checking: (106px, 120px, -106px, -120px, 60px, 60px, 340px, 210px, '../../images/core/sprite-core.png', 'icons-checking', );
+$icons-code-name: 'icons-code';
+$icons-code-x: 120px;
+$icons-code-y: 0px;
+$icons-code-offset-x: -120px;
+$icons-code-offset-y: 0px;
+$icons-code-width: 220px;
+$icons-code-height: 42px;
+$icons-code-total-width: 340px;
+$icons-code-total-height: 210px;
+$icons-code-image: '../../images/core/sprite-core.png';
+$icons-code: (120px, 0px, -120px, 0px, 220px, 42px, 340px, 210px, '../../images/core/sprite-core.png', 'icons-code', );
+$icons-erweima-name: 'icons-erweima';
+$icons-erweima-x: 0px;
+$icons-erweima-y: 0px;
+$icons-erweima-offset-x: 0px;
+$icons-erweima-offset-y: 0px;
+$icons-erweima-width: 120px;
+$icons-erweima-height: 120px;
+$icons-erweima-total-width: 340px;
+$icons-erweima-total-height: 210px;
+$icons-erweima-image: '../../images/core/sprite-core.png';
+$icons-erweima: (0px, 0px, 0px, 0px, 120px, 120px, 340px, 210px, '../../images/core/sprite-core.png', 'icons-erweima', );
+$icons-logo-name: 'icons-logo';
+$icons-logo-x: 120px;
+$icons-logo-y: 42px;
+$icons-logo-offset-x: -120px;
+$icons-logo-offset-y: -42px;
+$icons-logo-width: 136px;
+$icons-logo-height: 43px;
+$icons-logo-total-width: 340px;
+$icons-logo-total-height: 210px;
+$icons-logo-image: '../../images/core/sprite-core.png';
+$icons-logo: (120px, 42px, -120px, -42px, 136px, 43px, 340px, 210px, '../../images/core/sprite-core.png', 'icons-logo', );
+$icons-top-name: 'icons-top';
+$icons-top-x: 0px;
+$icons-top-y: 120px;
+$icons-top-offset-x: 0px;
+$icons-top-offset-y: -120px;
+$icons-top-width: 46px;
+$icons-top-height: 90px;
+$icons-top-total-width: 340px;
+$icons-top-total-height: 210px;
+$icons-top-image: '../../images/core/sprite-core.png';
+$icons-top: (0px, 120px, 0px, -120px, 46px, 90px, 340px, 210px, '../../images/core/sprite-core.png', 'icons-top', );
+$icons-weibo-name: 'icons-weibo';
+$icons-weibo-x: 216px;
+$icons-weibo-y: 120px;
+$icons-weibo-offset-x: -216px;
+$icons-weibo-offset-y: -120px;
+$icons-weibo-width: 50px;
+$icons-weibo-height: 50px;
+$icons-weibo-total-width: 340px;
+$icons-weibo-total-height: 210px;
+$icons-weibo-image: '../../images/core/sprite-core.png';
+$icons-weibo: (216px, 120px, -216px, -120px, 50px, 50px, 340px, 210px, '../../images/core/sprite-core.png', 'icons-weibo', );
+$icons-weixin-name: 'icons-weixin';
+$icons-weixin-x: 266px;
+$icons-weixin-y: 120px;
+$icons-weixin-offset-x: -266px;
+$icons-weixin-offset-y: -120px;
+$icons-weixin-width: 50px;
+$icons-weixin-height: 50px;
+$icons-weixin-total-width: 340px;
+$icons-weixin-total-height: 210px;
+$icons-weixin-image: '../../images/core/sprite-core.png';
+$icons-weixin: (266px, 120px, -266px, -120px, 50px, 50px, 340px, 210px, '../../images/core/sprite-core.png', 'icons-weixin', );
+$spritesheet-width: 340px;
+$spritesheet-height: 210px;
+$spritesheet-image: '../../images/core/sprite-core.png';
+$spritesheet-sprites: ($icons-accurad, $icons-checked, $icons-checking, $icons-code, $icons-erweima, $icons-logo, $icons-top, $icons-weibo, $icons-weixin, );
+$spritesheet: (340px, 210px, '../../images/core/sprite-core.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

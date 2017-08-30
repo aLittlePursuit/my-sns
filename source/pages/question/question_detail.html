@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    @@include("../_public/_head.html", {"title": "问题详情页"})
+    <link rel="stylesheet" href="../../css/question.min.css">
+</head>
+@@include("../_public/_js.html")
+<body>
+@@include("../_public/_nav.html")
+<div class="content-wrapper content-wrapper-add content-wrapper-hook clearfix">
+    <!--浏览器宽度小于992时导航栏右半部结构切换-->
+    @@include("../_public/_change_nav.html")
+    <!--自定义样式左右结构-->
+    <div class="part-left">
+        <div class="cell mb-20px">
+            <!--问题以及描述-->
+            @@include("_includes/_question.html")
+            <!--最佳回答-->
+            @@include("_includes/_answer_best.html")
+            <!--其他回答-->
+            @@include("_includes/_answer_other.html")
+            @@include("_includes/_answer_other.html")
+            @@include("_includes/_answer_other.html")
+        </div>
+        <div class="cell">
+            <!--富文本编辑-->
+            @@include("_includes/_issue_question.html")
+        </div>
+    </div>
+    <script>
+        $(function() {
+            initHeight();
+        });
+        $(window).resize(function() {
+            initHeight();
+        });
+        function initHeight() {
+            var holdHeight = 100;
+            var content = $('.describe-hook');
+            for (i = 0; i < content.length; i++) {
+                var contentHeight = content.eq(i).height();
+                var checkAll = content.eq(i).parents('.stretch-text-hook').find('.check-all-hook');
+                if(contentHeight > holdHeight) {
+                    checkAll.show();
+                } else {
+                    checkAll.hide();
+                }
+            }
+        }
+        $(function() {
+            var checkAll = $('.check-all-hook');
+            checkAll.on('click', function() {
+                $(this).find('.fa').toggleClass('fa-chevron-down fa-chevron-up').parents('.stretch-text-hook').find('.hold-text-hook').toggleClass('height-auto');
+                var condition = $(this).parents('.stretch-text-hook').find('.hold-text-hook').hasClass('height-auto');
+                var packUp = $(this).find('.pack-up-hook');
+                if(condition) {
+                    packUp.text('收起');
+                }else {
+                    packUp.text('查看全部');
+                }
+            });
+        });
+    </script>
+    <div class="part-right part-right-hook" data-state="0" data-show="true">
+        <div class="cell mb-20px">
+            <div class="topic-title mt--10px clearfix">
+                <div class="title-wrap">
+                    <i class="fa fa-question-circle"></i>推荐问题
+                </div>
+                <div class="title-wrap pull-right">
+                    <a href="#">换一批</a>
+                </div>
+            </div>
+            @@include("_includes/_recommendlist.html")
+        </div>
+        <div class="quiz">
+            <a href="" class="btn btn-success btn-quiz">
+                <i class="fa fa-edit"></i> 我要提问
+            </a>
+        </div>
+    </div>
+</div>
+@@include("../_public/_footer.html")
+@@include("../_public/_backtop.html")
+</body>
+</html>

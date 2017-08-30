@@ -1,0 +1,86 @@
+<div class="header-wrapper">
+    <div class="content-wrapper clearfix">
+        <div class="part-left">
+            <div class="logo">
+                <span class="icons icons-logo"></span>
+            </div>
+            <ul class="nav-group clearfix">
+                <li class="nav-group-cell active"><a href="">动态</a></li>
+                <li class="nav-group-cell dropdown dropdown-hover">
+                    <a href="">圈子 <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu nav-meun">
+                        <li><a href="">全部圈子</a></li>
+                        <li><a href="">全部圈子</a></li>
+                        <li><a href="">全部圈子</a></li>
+                        <li><a href="">全部圈子</a></li>
+                    </ul>
+                </li>
+                <li class="nav-group-cell dropdown dropdown-hover">
+                    <a href="">问答 <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu nav-meun">
+                        <li><a href="">问答</a></li>
+                        <li><a href="">问答</a></li>
+                        <li><a href="">问答</a></li>
+                        <li><a href="">问答</a></li>
+                    </ul>
+                </li>
+                <li class="nav-group-cell"><a href="">找医生</a></li>
+                <li class="nav-group-cell dropdown dropdown-hover">
+                    <a href="">直播 <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu nav-meun">
+                        <li><a href="">直播</a></li>
+                        <li><a href="">直播</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="part-right">
+            <ul class="person-meun clearfix">
+                <li><a class="show-search-hook"><i class="fa fa-search"></i></a></li>
+                <li><a><i class="fa fa-bell-o"></i><span class="warm-circle"></span></a></li>
+                <li><a><i class="fa fa-sliders"></i></a></li>
+                <li class="dropdown dropdown-hover">
+                    <a>hi,纪楠<img class="img-circle" src="../../images/core/avatar.png" width="32" height="32" alt=""></a>
+                    <div class="dropdown-menu" style="left: -86px;padding: 0;border-radius: .25em;">
+                        @@include("_userinfo_card.html")
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="all-search all-search-hook">
+            <form action="">
+                <input type="text" class="form-control search search-hook" placeholder="全站搜索">
+                <button type="submit" class="submit-btn submit-btn-hook">
+                    <i class="fa fa-search "></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+        var showSearchBtn = $('.show-search-hook');
+        var searchWrap = $('.all-search-hook');
+        var searchBox = searchWrap.find('.search-hook');
+        var submitBtn = searchWrap.find('.submit-btn-hook');
+        showSearchBtn.click(function() {
+            $(this).animate({'opacity':0}, 300);
+            searchWrap.fadeIn().find('.search-hook').focus();
+        });
+        searchBox.blur(function() {
+            showSearchBtn.animate({'opacity':1}, 300);
+            searchWrap.fadeOut();
+        });
+        submitBtn.click(function() {
+            if(searchBox.val() != '') {
+                $(this).submit();
+            } else {
+                layer.msg('内容不能为空');
+                return false;
+            }
+        });
+        $(window).resize(function () {
+            searchWrap.hide();
+        });
+    })
+</script>

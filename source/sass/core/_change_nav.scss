@@ -1,0 +1,84 @@
+.change-nav {
+  display: none;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  @media (max-width: 992px) {
+    display: block;
+  }
+  .change-person-info {
+    > ul > li {
+      a {
+        color: #999;
+        &:hover {
+          color: #fff;
+        }
+      }
+      &:last-child {
+        a:hover {
+          color: #59c8a7;
+        }
+      }
+    }
+  }
+  .change-part-show {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    .fa-show {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #59c8a7;
+      cursor: pointer;
+      &:hover {
+        color: #32987a;
+      }
+    }
+  }
+}
+
+.change-all-search {
+  display: none;
+  padding-top: 24px;
+  position: absolute;
+  top: 0;
+  left: 186px;
+  width: 240px;
+  z-index: 100;
+  .search {
+    padding: 4px 32px 4px 16px;
+    outline: none;
+    box-shadow: none;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #0b70c3;
+
+    }
+  }
+  .submit-btn {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    color: #666;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    &:hover {
+      color: #fff;
+    }
+    &:focus {
+      box-shadow: none;
+      border: none;
+      outline: none;
+    }
+  }
+}

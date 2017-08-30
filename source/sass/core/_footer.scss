@@ -1,0 +1,70 @@
+.fooder-wrapper {
+    padding: 20px;
+    font-size: 16px;
+    color: #999;
+    background: #3c4147;
+    .attention {
+        padding: 60px 0 52px 0;
+        text-align: right;
+        >  span {
+            display: inline-block;
+            vertical-align: top;
+            height: 50px;
+            line-height: 50px;
+            &.icons {
+                margin-right: 46px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .share {
+        text-align: right;
+        line-height: 34px;
+        .bdsharebuttonbox {
+            display: inline-block;
+            height: 34px;
+            line-height: 34px;
+        }
+        a {
+            display: inline-block;
+            padding: 0;
+            margin: 0 5px 0 0;
+            vertical-align: top;
+            width: 34px;
+            height: 34px;
+            text-align: center;
+            line-height: 34px;
+            border-radius: .25em;
+            color: #fff;
+            float: none;
+            font-size: 16px;
+            background-image: none;
+            &:last-child {
+                margin-right: 0 !important;
+            }
+            &.plus {
+                background: #4dbfe3;
+            }
+            &.star {
+                background: #e79211;
+            }
+            &.weixin {
+                background: #56b744;
+            }
+            &.sina {
+                background: #da2946;
+            }
+            &.tcent {
+                background: #1d89c9;
+            }
+            &.qq {
+                background: #107cbc;
+            }
+        }
+    }
+    .accurad-code {
+        margin-top: 20px;
+    }
+}

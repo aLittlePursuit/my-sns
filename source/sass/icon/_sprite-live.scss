@@ -1,0 +1,200 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$icons-hot-name: 'icons-hot';
+$icons-hot-x: 96px;
+$icons-hot-y: 61px;
+$icons-hot-offset-x: -96px;
+$icons-hot-offset-y: -61px;
+$icons-hot-width: 30px;
+$icons-hot-height: 30px;
+$icons-hot-total-width: 232px;
+$icons-hot-total-height: 137px;
+$icons-hot-image: '../../images/live/sprite-live.png';
+$icons-hot: (96px, 61px, -96px, -61px, 30px, 30px, 232px, 137px, '../../images/live/sprite-live.png', 'icons-hot', );
+$icons-online-name: 'icons-online';
+$icons-online-x: 126px;
+$icons-online-y: 61px;
+$icons-online-offset-x: -126px;
+$icons-online-offset-y: -61px;
+$icons-online-width: 30px;
+$icons-online-height: 30px;
+$icons-online-total-width: 232px;
+$icons-online-total-height: 137px;
+$icons-online-image: '../../images/live/sprite-live.png';
+$icons-online: (126px, 61px, -126px, -61px, 30px, 30px, 232px, 137px, '../../images/live/sprite-live.png', 'icons-online', );
+$icons-play-hover-name: 'icons-play-hover';
+$icons-play-hover-x: 0px;
+$icons-play-hover-y: 61px;
+$icons-play-hover-offset-x: 0px;
+$icons-play-hover-offset-y: -61px;
+$icons-play-hover-width: 48px;
+$icons-play-hover-height: 48px;
+$icons-play-hover-total-width: 232px;
+$icons-play-hover-total-height: 137px;
+$icons-play-hover-image: '../../images/live/sprite-live.png';
+$icons-play-hover: (0px, 61px, 0px, -61px, 48px, 48px, 232px, 137px, '../../images/live/sprite-live.png', 'icons-play-hover', );
+$icons-play-name: 'icons-play';
+$icons-play-x: 48px;
+$icons-play-y: 61px;
+$icons-play-offset-x: -48px;
+$icons-play-offset-y: -61px;
+$icons-play-width: 48px;
+$icons-play-height: 48px;
+$icons-play-total-width: 232px;
+$icons-play-total-height: 137px;
+$icons-play-image: '../../images/live/sprite-live.png';
+$icons-play: (48px, 61px, -48px, -61px, 48px, 48px, 232px, 137px, '../../images/live/sprite-live.png', 'icons-play', );
+$icons-recorded-mask-name: 'icons-recorded-mask';
+$icons-recorded-mask-x: 0px;
+$icons-recorded-mask-y: 0px;
+$icons-recorded-mask-offset-x: 0px;
+$icons-recorded-mask-offset-y: 0px;
+$icons-recorded-mask-width: 232px;
+$icons-recorded-mask-height: 61px;
+$icons-recorded-mask-total-width: 232px;
+$icons-recorded-mask-total-height: 137px;
+$icons-recorded-mask-image: '../../images/live/sprite-live.png';
+$icons-recorded-mask: (0px, 0px, 0px, 0px, 232px, 61px, 232px, 137px, '../../images/live/sprite-live.png', 'icons-recorded-mask', );
+$icons-refresh-hover-name: 'icons-refresh-hover';
+$icons-refresh-hover-x: 216px;
+$icons-refresh-hover-y: 75px;
+$icons-refresh-hover-offset-x: -216px;
+$icons-refresh-hover-offset-y: -75px;
+$icons-refresh-hover-width: 14px;
+$icons-refresh-hover-height: 14px;
+$icons-refresh-hover-total-width: 232px;
+$icons-refresh-hover-total-height: 137px;
+$icons-refresh-hover-image: '../../images/live/sprite-live.png';
+$icons-refresh-hover: (216px, 75px, -216px, -75px, 14px, 14px, 232px, 137px, '../../images/live/sprite-live.png', 'icons-refresh-hover', );
+$icons-refresh-name: 'icons-refresh';
+$icons-refresh-x: 216px;
+$icons-refresh-y: 61px;
+$icons-refresh-offset-x: -216px;
+$icons-refresh-offset-y: -61px;
+$icons-refresh-width: 14px;
+$icons-refresh-height: 14px;
+$icons-refresh-total-width: 232px;
+$icons-refresh-total-height: 137px;
+$icons-refresh-image: '../../images/live/sprite-live.png';
+$icons-refresh: (216px, 61px, -216px, -61px, 14px, 14px, 232px, 137px, '../../images/live/sprite-live.png', 'icons-refresh', );
+$icons-splendid-name: 'icons-splendid';
+$icons-splendid-x: 186px;
+$icons-splendid-y: 61px;
+$icons-splendid-offset-x: -186px;
+$icons-splendid-offset-y: -61px;
+$icons-splendid-width: 30px;
+$icons-splendid-height: 30px;
+$icons-splendid-total-width: 232px;
+$icons-splendid-total-height: 137px;
+$icons-splendid-image: '../../images/live/sprite-live.png';
+$icons-splendid: (186px, 61px, -186px, -61px, 30px, 30px, 232px, 137px, '../../images/live/sprite-live.png', 'icons-splendid', );
+$icons-star-name: 'icons-star';
+$icons-star-x: 156px;
+$icons-star-y: 61px;
+$icons-star-offset-x: -156px;
+$icons-star-offset-y: -61px;
+$icons-star-width: 30px;
+$icons-star-height: 30px;
+$icons-star-total-width: 232px;
+$icons-star-total-height: 137px;
+$icons-star-image: '../../images/live/sprite-live.png';
+$icons-star: (156px, 61px, -156px, -61px, 30px, 30px, 232px, 137px, '../../images/live/sprite-live.png', 'icons-star', );
+$icons-success-name: 'icons-success';
+$icons-success-x: 28px;
+$icons-success-y: 109px;
+$icons-success-offset-x: -28px;
+$icons-success-offset-y: -109px;
+$icons-success-width: 24px;
+$icons-success-height: 24px;
+$icons-success-total-width: 232px;
+$icons-success-total-height: 137px;
+$icons-success-image: '../../images/live/sprite-live.png';
+$icons-success: (28px, 109px, -28px, -109px, 24px, 24px, 232px, 137px, '../../images/live/sprite-live.png', 'icons-success', );
+$icons-video-camera-name: 'icons-video-camera';
+$icons-video-camera-x: 0px;
+$icons-video-camera-y: 109px;
+$icons-video-camera-offset-x: 0px;
+$icons-video-camera-offset-y: -109px;
+$icons-video-camera-width: 28px;
+$icons-video-camera-height: 28px;
+$icons-video-camera-total-width: 232px;
+$icons-video-camera-total-height: 137px;
+$icons-video-camera-image: '../../images/live/sprite-live.png';
+$icons-video-camera: (0px, 109px, 0px, -109px, 28px, 28px, 232px, 137px, '../../images/live/sprite-live.png', 'icons-video-camera', );
+$spritesheet-width: 232px;
+$spritesheet-height: 137px;
+$spritesheet-image: '../../images/live/sprite-live.png';
+$spritesheet-sprites: ($icons-hot, $icons-online, $icons-play-hover, $icons-play, $icons-recorded-mask, $icons-refresh-hover, $icons-refresh, $icons-splendid, $icons-star, $icons-success, $icons-video-camera, );
+$spritesheet: (232px, 137px, '../../images/live/sprite-live.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

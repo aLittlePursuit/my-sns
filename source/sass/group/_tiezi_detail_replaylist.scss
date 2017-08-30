@@ -1,0 +1,63 @@
+.tiezi-replay-wrapper {
+    position: relative;
+    padding-top: 20px;
+    .building-owner {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        font-size: 14px;
+    }
+    .replay-head {
+        margin-bottom: 20px;
+        .replay-head-avatar {
+            display: inline-block;
+        }
+        .replay-head-info {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+            .replay-head-name {
+                a {
+                    font-size: 16px;
+                    &:hover {
+                        color: #59c8a7;
+                    }
+                }
+            }
+            .replay-head-post {
+                font-size: 14px;
+                color: #999999;
+            }
+        }
+    }
+    .replay-body {
+        position: relative;
+        padding-bottom: 70px;
+        margin-bottom: 20px;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        .replay-content {
+            min-height: 10em;
+            overflow: hidden;
+            word-break: break-all;
+        }
+        .replay-foot {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            width: 100%;
+            color: #999;
+            a {
+                margin-left: 20px;
+                font-size: 12px;
+                color: #999;
+                &:hover {
+                    color: #4fbcdb;
+                }
+                .fa {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

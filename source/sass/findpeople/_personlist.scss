@@ -1,0 +1,36 @@
+.personlist {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    &:last-child {
+        border-bottom: none;
+    }
+    .oneperson {
+        height: 80px;
+        .avatar {
+            display: inline-block;
+        }
+        .name {
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 20px;
+            max-width: 116px;
+            line-height: 80px;
+        }
+        .fans {
+            max-width: 50%;
+        }
+        .score {
+            max-width: 50%;
+        }
+    }
+    .person-post,
+    .person-fans {
+        line-height: 27px;
+    }
+    .person-attention {
+        padding-top: 25px;
+        .btn {
+            width: 80px;
+        }
+    }
+}

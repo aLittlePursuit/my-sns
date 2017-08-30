@@ -1,0 +1,50 @@
+.recommendlist {
+    padding: 10px 0;
+    .recommendlist-cell {
+        position: relative;
+        padding: 10px 0;
+        &:last-child {
+            border-bottom: none;
+        }
+        .question {
+            position: relative;
+            padding-left: 10px;
+            display: block;
+            margin-right: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:before {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                content: '';
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: #60c2de;
+            }
+        }
+        .answer {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 0;
+        }
+        &:hover {
+            .question {
+                color: #59c8a7;
+            }
+            .answer {
+                display: inline-block;
+                color: #59c8a7;
+            }
+        }
+    }
+}
+
+.quiz {
+    .btn-quiz {
+        width: 100%;
+    }
+}

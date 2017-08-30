@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    @@include("../_public/_head.html", {"title": "精选文章"})
+    <link rel="stylesheet" href="../../css/group.min.css">
+</head>
+@@include("../_public/_js.html")
+<body>
+@@include("../_public/_nav.html")
+<div class="content-wrapper content-wrapper-add content-wrapper-hook clearfix">
+    <!--浏览器宽度小于992时导航栏右半部结构切换-->
+    @@include("../_public/_change_nav.html")
+    <div class="part-left">
+        <div class="tab-search clearfix">
+            <span class="content-class">精选文章</span>
+        </div>
+        <div class="pt-10px pb-10px bg-fff">
+            @@include("_includes/_selectlist.html")
+            @@include("_includes/_selectlist.html")
+            @@include("_includes/_selectlist.html")
+        </div>
+    </div>
+    <div class="part-right part-right-hook" data-state="0" data-show="true">
+        <div class="cell">
+            <div class="topic-title mt--10px clearfix">
+                <div class="title-wrap">
+                    <i class="fa fa-tags"></i>随机推荐
+                </div>
+                <div class="title-wrap pull-right">
+                    <a href="#">全部</a>
+                </div>
+            </div>
+            @@include("_includes/_mygrouplist.html")
+        </div>
+    </div>
+</div>
+@@include("../_public/_footer.html")
+@@include("../_public/_backtop.html")
+</body>
+</html>

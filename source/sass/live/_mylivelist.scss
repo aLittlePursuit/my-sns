@@ -1,0 +1,90 @@
+.row-table {
+    padding: 20px 10px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    &:last-child {
+        border-bottom: none;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .col {
+        padding-left: 10px;
+        padding-right: 10px;
+        h5 {
+            color: #a5aeb8;
+            font-size:14px;
+        }
+        .help-intro {
+            color: #59c8a7;
+        }
+    }
+    .col-text {
+        padding: 0;
+        vertical-align: middle;
+        width: 340px;
+        .title {
+            display: inline-block;
+            width: 250px;
+            line-height: 24px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .text-rdiuos {
+            display: inline-block;
+            font-size: 12px;
+            border-radius: 12px;
+            width: 80px;
+            height: 24px;
+            text-align: center;
+            line-height: 20px;
+        }
+        .textnostart{
+            color: #9cc96c;
+            border: 2px solid #9cc96c;
+        }
+        .texting {
+            border: 2px #50c7a7 solid;
+            color: #50c7a7;
+        }
+        .textend{
+            border:2px solid #ecae55;
+            color: #ecae55;
+        }
+        .live-address {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .address-name {
+                display: inline-block;
+                width: 82px;
+                text-align: right;
+            }
+            .address {
+                display: inline-block;
+                width: 206px;
+                .form-control {
+                    display: inline-block;
+                    height: 24px;
+                    font-size: 12px;
+                    border-radius: 2px;
+                }
+            }
+            .btn-copy {
+                border-radius: 2px;
+            }
+
+        }
+    }
+    .colbtn {
+        padding: 5px 15px;
+        .col{
+            padding-left: 30px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.issue-question {
+    padding: 20px 0;
+    background: #fff;
+    .issue-box {
+        > textarea {
+            height: 150px;
+        }
+    }
+    .issue-btn {
+        margin-top: 20px;
+        text-align: right;
+    }
+}

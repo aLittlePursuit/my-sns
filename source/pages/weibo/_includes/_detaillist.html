@@ -1,0 +1,79 @@
+<div class="cell cell-add pt-20px">
+    <div class="weibo-content">
+        <div class="content-head clearfix">
+            <div class="avat-box pull-left">
+                <a href=""><img class="img-circle" src="../../images/core/avatar.png" width="60" height="60" alt=""></a>
+            </div>
+            <div class="op-box pull-left">
+                <div class="op-tb op-top">
+                    <a href="" class="user_name">喵星人</a>
+                    <span class="grade text-warning">Lv2</span>
+                    <span>发布了动态</span>
+                </div>
+                <div class="op-bottom">
+                    <span class="label label-badge label-primary">
+                        <i class="fa fa-user"></i> 未认证
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="content-info">
+            <h3 class="person-title">动态标题</h3>
+            <p class="word-wrap">内容</p>
+            <div class="images-wrap1 mb-10px">
+                <a><img src="../../images/core/test.png" alt=""></a>
+            </div>
+            <div class="images-wrap2or4 clearfix mb-10px">
+                <a><img src="../../images/core/test.png" width="180" height="180" alt=""></a>
+                <a><img src="../../images/core/test.png" width="180" height="180" alt=""></a>
+                <a><img src="../../images/core/test.png" width="180" height="180" alt=""></a>
+                <a><img src="../../images/core/test.png" width="180" height="180" alt=""></a>
+            </div>
+            <div class="images-wrap-other clearfix mb-10px">
+                <a><img src="../../images/core/test.png" width="120" height="120" alt=""></a>
+                <a><img src="../../images/core/test.png" width="120" height="120" alt=""></a>
+                <a><img src="../../images/core/test.png" width="120" height="120" alt=""></a>
+                <a><img src="../../images/core/test.png" width="120" height="120" alt=""></a>
+                <a><img src="../../images/core/test.png" width="120" height="120" alt=""></a>
+                <a><img src="../../images/core/test.png" width="120" height="120" alt=""></a>
+                <a><img src="../../images/core/test.png" width="120" height="120" alt=""></a>
+                <a><img src="../../images/core/test.png" width="120" height="120" alt=""></a>
+                <a><img src="../../images/core/test.png" width="120" height="120" alt=""></a>
+            </div>
+            <div class="cell-foot clearfix">
+                <div class="cell-left">
+                    <i class="fa fa-clock-o"></i>
+                    <span class="time">时间</span>
+                    <span class="check-detail">
+                        <a title="查看详情" href="{:U('Weibo/Index/weiboDetail',array('id'=>$weibo['id']))}">查看详情</a>
+                    </span>
+                </div>
+                <div class="cell-right pull-right">
+                    @@include("_operation.html")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="weibo-bottom ml-30px mb-20px clearfix">
+    <div class="top-triangle-border"></div>
+    <div class="top-triangle-content"></div>
+    <div class="bottom-top clearfix">
+        <div class="pull-left left-like-list text-more text-color">
+            <a title="喜欢" data-role="support-weibo" class="text-color">
+                <i class="fa fa-heart-o weibo_like"></i>
+                <span class="support-text">喜欢</span>
+            </a>
+            <span id="supporter_Weibo_weibo_{$weibo['id']}">
+                  <a href="" class="text-color">喵星人</a>
+            </span>
+        </div>
+        <a class="pull-right right-say-button" data-role="show-comment-input">
+            <i class="fa fa-chevron-circle-right"></i> 说一句
+        </a>
+    </div>
+    <div class=" weibo-comment-block">
+        @@include("_somecomment.html")
+    </div>
+</div>

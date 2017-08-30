@@ -1,0 +1,34 @@
+<div id="backtop" class="backtop" onclick="backTop()" onmouseover="animateBackHover()" onmouseleave="animateBackLeave()">
+    <span class="icons icons-top"></span>
+</div>
+<script>
+    $(function() {
+        showBackTop();
+    });
+    $(document).on('mousewheel', function() {
+        showBackTop();
+    });
+    function showBackTop() {
+        var bodyScrollTop = $('body').scrollTop();
+        var backTop = $('#backtop');
+        if (bodyScrollTop) {
+            backTop.show();
+        } else {
+            backTop.hide();
+        }
+    }
+    function animateBackHover() {
+        var backIcons = $('#backtop').find('.icons');
+        backIcons.animate({'top': '-45px'}, 100);
+    }
+    function animateBackLeave() {
+        var backIcons = $('#backtop').find('.icons');
+        backIcons.animate({'top': 0}, 100);
+    }
+    function backTop() {
+        var body = $('body');
+        var backTop = $('#backtop');
+        body.animate({'scrollTop': 0}, 300);
+        backTop.hide();
+    }
+</script>

@@ -1,0 +1,89 @@
+<div class="all-keshilist clearfix bg-fff pt-15px">
+    <div class="init-keshi pull-left">
+        <div class="init-keshi-children">
+            <span class="cell-all cell-keshi">
+                <a class="active" href="">全部</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+            <span class="cell-keshi">
+                <a href="">骨科</a>
+            </span>
+        </div>
+    </div>
+    <div class="choose-time pull-right">
+        <div class="btn-down pull-left"><i class="fa fa-caret-down"></i></div>
+        <div class="dropdown-toggle dropdown-hook pull-right " data-toggle="dropdown">
+            发帖时间 <i class="fa fa-caret-down"></i>
+        </div>
+        <ul class="dropdown-menu text-left" role="menu">
+            <li><a href="">发帖时间</a></li>
+            <li><a href="">回复时间</a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    $(function() {
+        initHeight();
+    });
+
+    function initHeight() {
+        var flexHeight = 31;
+        var keshiChildrenHeight = $('.init-keshi-children').height();
+        var btnDown = $('.btn-down');
+        if(keshiChildrenHeight <= flexHeight) {
+            btnDown.css('display','none');
+        } else {
+            btnDown.css('display','inline-block');
+        }
+    }
+
+    $(window).resize(function() {
+        initHeight();
+    });
+
+    $('.btn-down').on('click',function() {
+        $(this).find('.fa').toggleClass('fa-caret-down fa-caret-up');
+        $(this).parents('.all-keshilist').find('.init-keshi').toggleClass('init-keshi-other');
+    });
+</script>

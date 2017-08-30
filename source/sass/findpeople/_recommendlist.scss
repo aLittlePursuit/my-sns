@@ -1,0 +1,38 @@
+.recommendlist {
+    padding: 10px 0;
+    .recommendlist-cell {
+        position: relative;
+        padding: 10px 0;
+        .intro {
+            position: relative;
+            margin-bottom: 5px;
+            line-height: 20px;
+            .name {
+                vertical-align: top;
+                color: #333;
+                font-weight: 700;
+            }
+            .grade {
+                font-weight: 700;
+            }
+            .label {
+                margin-bottom: 0;
+                vertical-align: top;
+            }
+            .add-attention {
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #59c8a7;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+        .post {
+            > span {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+

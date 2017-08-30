@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    @@include("../_public/_head.html", {"title": "帖子详情"})
+    <link rel="stylesheet" href="../../css/group.min.css">
+</head>
+@@include("../_public/_js.html")
+<body>
+@@include("../_public/_nav.html")
+<div class="content-wrapper content-wrapper-add content-wrapper-hook clearfix">
+    <!--浏览器宽度小于992时导航栏右半部结构切换-->
+    @@include("../_public/_change_nav.html")
+    <!--圈子详情头部-->
+    @@include("_includes/_group_detail_head.html")
+    <div class="row">
+        <div class="col-md-4 change-style">
+            <div class="detail-wrapper-left">
+                @@include("_includes/_group_detail_content_left.html")
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="detail-wrapper-right">
+                @@include("_includes/_tiezi_detail_content.html")
+            </div>
+        </div>
+    </div>
+</div>
+@@include("../_public/_footer.html")
+@@include("../_public/_backtop.html")
+</body>
+</html>

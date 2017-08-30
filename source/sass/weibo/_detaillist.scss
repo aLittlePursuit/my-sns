@@ -1,0 +1,211 @@
+.content-head {
+    height: 68px;
+    position: relative;
+    left: -60px;
+    .avat-box {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        border: 4px solid #e9edf0;
+    }
+    .op-box {
+        padding-left: 15px;
+        height: 100%;
+        .op-tb {
+            width: 100%;
+            line-height: 32px;
+            padding-top: 6px;
+        }
+        .op-top {
+            position: relative;
+            .user_name,
+            .grade {
+                margin-right: 5px;
+                font-weight: 700;
+                font-size: 14px !important;
+            }
+            .user_name:hover {
+                color: #59c8a7;
+            }
+            .op-bottom {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+.content-info {
+    width: 100%;
+    .person-title {
+        margin-top: 12px;
+    }
+    .word-wrap {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    .images-wrap1 {
+        display: inline-block;
+        max-width: 430px;
+        img {
+            max-width: 430px;
+            @media (max-width: 500px) {
+                max-width: 100%;
+            }
+        }
+    }
+    .images-wrap2or4 {
+        display: inline-block;
+        max-width: 400px;
+        img {
+            float: left;
+            margin: 0 5px 5px 0;
+            width: 180px;
+            height: 180px;
+            @media (max-width: 500px) {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+    .images-wrap-other {
+        display: inline-block;
+        max-width: 400px;
+        img {
+            float: left;
+            margin: 0 5px 5px 0;
+            width: 120px;
+            height: 120px;
+            @media (max-width: 500px) {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}
+
+
+.cell-foot {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    .fa {
+        font-size: 14px;
+    }
+    .cell-left {
+        display: inline-block;
+        color: #999999;
+        .time,
+        .check-detail {
+            padding: 0 10px;
+        }
+        .time {
+            border-right: 1px solid #eeeeee;
+        }
+        .check-detail > a {
+            color: #59c8a7;
+        }
+    }
+    .cell-right {
+        .dynamic-state {
+            display: inline-block;
+            position: relative;
+            float: left;
+            width: 80px;
+            text-align: right ;
+            outline: none;
+        }
+        a.text-color1,
+        a.text-color1:focus {
+            color: #59c8a7;
+        }
+        a.text-color2,
+        a.text-color2:focus {
+            color: #9dc970;
+        }
+        a.text-color3,
+        a.text-color3:focus {
+            color: #59bcda;
+        }
+        a.text-color4,
+        a.text-color4:focus {
+            color: #f39c11;
+        }
+        .count {
+            display: inline-block;
+            max-width: 40px;
+        }
+    }
+    .cell-live-icon {
+        text-align: right;
+        width: 80px;
+    }
+}
+
+
+.weibo-bottom {
+    position: relative;
+    border-bottom: 1px solid #eee;
+    .top-triangle-border {
+        position: absolute;
+        right: 290px;
+        border-bottom: 12px solid #eee;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        top: -11px;
+    }
+    .top-triangle-content {
+        position: absolute;
+        right: 291px;
+        border-bottom: 10px solid #FCFCFC;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        top: -9px;
+        z-index: 11;
+    }
+    .bottom-top {
+        position: absolute;
+        //top: 1px;
+        z-index: 10;
+        width: 100%;
+        line-height: 40px;
+        background: #fcfcfc;
+        padding-left: 30px;
+        padding-right: 30px;
+        .left-like-list {
+            color: #ccc;
+            max-width: 60%;
+        }
+        .right-say-button {
+            position: relative;
+            color: #808080;
+            width: 40%;
+            text-align: right;
+            .iconfont {
+                position: absolute;
+                right: 50px;
+                top: 50%;
+                margin-top: -9px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.weibo-comment-block {
+    position: relative;
+    background: #fcfcfc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

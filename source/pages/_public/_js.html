@@ -1,0 +1,46 @@
+<!-- jQuery -->
+<script src="../../js/jquery-1.9.1.min.js"></script>
+
+<!-- Vue -->
+<script src="../../js/vue.js"></script>
+
+<!-- Zui Core JavaScript -->
+<script src="../../js/zui.js"></script>
+
+<!-- Soket -->
+<script src="../../js/socket.io-1.4.5.js"></script>
+
+<!-- Layer JavaScript -->
+<script src="../../js/layer/layer.js"></script>
+
+<script>
+    $(function() {
+        mainHeight();
+    });
+    function mainHeight() {
+        var _holdValue = 992;
+        var _contentWrapper = $('.content-wrapper-hook');
+        var _partRight = $('.part-right-hook');
+        var _minHeight = _partRight.height();
+        var windowWidth = $(window).width();
+        if (_minHeight && windowWidth > _holdValue) {
+            _contentWrapper.css('min-height', _minHeight + 'px');
+        } else {
+            _contentWrapper.css('min-height', 1);
+        }
+    }
+    $(window).resize(function() {
+        var _holdValue = 992;
+        var _windowWidth = $(window).width();
+        var _partRight = $('.part-right-hook');
+        var _faShow = $('.fa-show');
+        _partRight.attr('data-state',0);
+        if(_windowWidth >= _holdValue) {
+            _partRight.show();
+            _faShow.addClass('fa-chevron-circle-down').removeClass('fa-chevron-circle-left');
+        } else {
+            _partRight.hide();
+        }
+        mainHeight();
+    });
+</script>

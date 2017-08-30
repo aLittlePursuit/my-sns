@@ -1,0 +1,25 @@
+<form name="myform" action="" method="get">
+    <div class="mylive_header">
+        <h2 class="mylive-text">我的直播</h2>
+        <div class="mysearch">
+            <input type="hidden" name="m" value="live">
+            <input type="hidden" name="c" value="index">
+            <input type="hidden" name="a" value="livelist">
+            <input type="hidden" name="status" value="{$search['status']}">
+            <input type="hidden" name="sort" value="{$search['sort']}">
+            <input type="text" class="form-control" id="title" name="title" value="" placeholder="搜索">
+            <a href="#" id="searchTitle"><i class="icon icon-search mylive_icon "></i></a>
+        </div>
+    </div>
+    <div class="live-amhead">
+        <span class="active"><a href="#" class="searchStatus">全部</a></span>
+        <span><a href="#" class="searchStatus">未开始</a></span>
+        <span><a href="#" class="searchStatus">直播中</a></span>
+        <span><a href="#" class="searchStatus">已结束</a></span>
+        <span class="pull-right">
+                <i class="fa fa-fw fa-sort-amount-asc"></i>
+                <span class="active"><a href="#" id="searchTime">按时间</a></span>
+                <span><a href="#" id="searchHot">按热度</a></span>
+            </span>
+    </div>
+</form>

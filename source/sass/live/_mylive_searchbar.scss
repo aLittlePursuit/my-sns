@@ -1,0 +1,52 @@
+.mylive_header {
+    position: relative;
+    height: 47px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7ebee;
+    .mylive-text {
+        line-height: 47px;
+        padding-left: 23px;
+        font-weight: bold;
+        margin-top: 0;
+    }
+    .mysearch {
+        width: 200px;
+        position:absolute;
+        top: 7px;
+        right: 21px;
+        .form-control {
+            background-color: #f2f7fa !important;
+            border: 1px solid #e7ebee !important;
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+        .mylive_icon {
+            position: absolute;
+            right: 5px;
+            top: 9px;
+            color: #bcc4cb;
+        }
+    }
+}
+
+.live-amhead {
+    height: 47px;
+    padding-left: 10px;
+    line-height: 47px;
+    padding-right: 20px;
+    background-color: #f2f7fa;
+    span {
+        a {
+            color: #adb6bf;
+            padding-left: 15px;
+        }
+        &.active {
+            a {
+                color: #5c6166;
+                font-weight: bold;
+            }
+        }
+    }
+}

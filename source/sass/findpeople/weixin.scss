@@ -1,0 +1,49 @@
+.clearfix:before,
+.clearfix:after {
+    /* 1 */
+    display: table;
+    content: " ";
+    /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    .title {
+        text-align: center;
+        line-height: 44px;
+        height: 44px;
+        color: #fff;
+        background: #59c8a7;
+    }
+    .form-wrapper {
+        padding: 15px 20px;
+        .btn {
+            padding: 10px 12px;
+        }
+        input {
+            height: 42px;
+            box-shadow: none;
+            border-radius: 2px;
+            &:focus {
+                border-color: #59c8a7;
+            }
+        }
+        .get-code {
+            > input {
+                display: inline-block;
+                width: 48%;
+            }
+            > a.btn {
+                float: right;
+                width: 48%;
+            }
+        }
+        .btn-register {
+            width: 100%;
+        }
+    }
+}

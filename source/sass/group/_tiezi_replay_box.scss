@@ -1,0 +1,26 @@
+.replay-post-box {
+    padding-bottom: 20px;
+    .replay-head {
+        margin-bottom: 20px;
+        .replay-head-avatar {
+            display: inline-block;
+        }
+        .replay-head-info {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+            .replay-head-name {
+                a {
+                    font-size: 16px;
+                    &:hover {
+                        color: #59c8a7;
+                    }
+                }
+            }
+            .replay-head-post {
+                font-size: 14px;
+                color: #999999;
+            }
+        }
+    }
+}

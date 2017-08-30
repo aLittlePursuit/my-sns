@@ -1,0 +1,83 @@
+.apply-content {
+    background-color: #fff;
+    border-radius: 4px;
+    .page-header {
+        height: 60px;
+        color: #fff;
+        background-color: #59c8a7;
+        border-radius: 4px 4px 0 0;
+        .page-text {
+            margin: 0;
+            padding: 0;
+            line-height: 60px;
+            text-align: center;
+        }
+    }
+    .apply-form {
+        padding: 30px;
+        .form-control-static {
+            min-height: 34px;
+            margin-bottom: 0;
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+        .form-control:focus {
+            border-color: #59c8a7 !important;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(24, 96, 157, .6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(24, 96, 157, .6);
+        }
+        textarea.form-control {
+            height: 80px !important;
+        }
+        .img-thumbnails {
+            padding: 10px 0;
+        }
+        .form-roomscr-check {
+            display: inline-block;
+            margin: 15px 0 0 5px;
+            width: auto;
+        }
+        .apply_span_bottom {
+            margin-bottom: 15px;
+        }
+        .checkboxs {
+            padding-left: 34px;
+        }
+        .text-success {
+            color: #59c8a7;
+        }
+        .fileinput-button {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .fileinput-button input {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            transform: translate(-300px, 0) scale(4);
+            font-size: 23px;
+            direction: ltr;
+            cursor: pointer;
+        }
+
+        .fileinput-button-text {
+            display: inline-block;
+            margin-left: 5px;
+            color: #666;
+        }
+    }
+}
+
+.col {
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    float: left;
+    min-height: 1px;
+}

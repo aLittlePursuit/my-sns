@@ -1,0 +1,77 @@
+.liveallnav {
+    padding-left: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    list-style: none;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    .liveallnav-cell {
+        float: left;
+        margin: 0 5px;
+        > a {
+            padding: 3px 10px;
+            border-radius: 4px;
+            border: none !important;
+            &:hover,
+            &.active {
+                border: none !important;
+                color: #fff;
+                background: #59c8a7;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.keshi-class-detail {
+    padding: 10px 20px 0 20px;
+    background: #fff;
+}
+.keshi-class-detail .cell-wrapper .cell {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.keshi-class-detail .cell-wrapper .cell:after {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 10px;
+    background: #e6e6e6;
+}
+.keshi-class-detail .cell-wrapper .cell:first-child {
+    padding-left: 0;
+}
+.keshi-class-detail .cell-wrapper .cell:last-child {
+    padding-right: 0;
+}
+.keshi-class-detail .cell-wrapper .cell:last-child:after {
+    width: 0;
+}
+
+.keshi-class-detail .cell-wrapper .cell:hover a,
+.keshi-class-detail .cell-wrapper .cell a.active {
+    color: #59c8a7 ;
+}

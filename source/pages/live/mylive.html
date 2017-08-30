@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    @@include("../_public/_head.html", {"title": "我的直播"})
+    <link rel="stylesheet" href="../../css/live.min.css">
+</head>
+@@include("../_public/_js.html")
+<body>
+@@include("../_public/_nav.html")
+<div class="content-wrapper content-wrapper-add content-wrapper-hook clearfix">
+    <!--浏览器宽度小于992时导航栏右半部结构切换-->
+    @@include("../_public/_change_nav.html")
+    <!--我的直播头部搜索切换栏-->
+    @@include("_includes/_mylive_searchbar.html")
+    <!--我的直播列表-->
+    @@include("_includes/_mylivelist.html")
+    @@include("_includes/_mylivelist.html")
+    @@include("_includes/_mylivelist.html")
+    @@include("_includes/_mylivelist.html")
+    @@include("_includes/_mylivelist.html")
+
+    @@include("../_public/_pagination.html")
+</div>
+@@include("../_public/_footer.html")
+@@include("../_public/_backtop.html")
+</body>
+</html>

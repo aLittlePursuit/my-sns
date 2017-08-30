@@ -1,0 +1,53 @@
+.topic-holder {
+    .have-holder {
+        padding: 10px 0;
+        .h-avatar {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+        }
+        .h-info {
+            padding-left: 10px;
+            > p {
+                margin-bottom: 5px;
+            }
+            .named {
+                font-size: 14px;
+                font-weight: 700;
+                &:hover {
+                    color: #59c8a7;
+                }
+            }
+            .intro-self {
+                max-width: 180px;
+                font-size: 12px;
+                overflow: hidden;
+                white-space: normal;
+                text-overflow: ellipsis;
+            }
+            .topic-btn {
+                padding: 2px 15px;
+                display: inline-block;
+                border: 1px solid #d9d9d9;
+                border-radius: 3px;
+                color: #333;
+                font-size: 12px;
+            }
+        }
+    }
+    .topic-footer {
+        border-top: 1px solid #e1e5ea;
+        .num {
+            font-size: 24px;
+        }
+        .name {
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+
+
+

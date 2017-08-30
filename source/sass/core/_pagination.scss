@@ -1,0 +1,36 @@
+.pagination-wrapper {
+    //background: blue;
+    text-align: center;
+}
+.pagination {
+    display: inline-block;
+    padding: 30px 0;
+    vertical-align: top;
+    font-size: 16px;
+    .pagination-cell {
+        margin-right: 5px;
+        float: left;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        border-radius: .25em;
+        background: #f4f4f4;
+        &:last-child {
+            margin-right: 0;
+        }
+        > a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: #59c8a7;
+        }
+        &.active,
+        &:hover {
+            background: #59c8a7;
+            > a {
+                color: #fff;
+            }
+        }
+    }
+}

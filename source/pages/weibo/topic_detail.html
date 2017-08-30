@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    @@include("../_public/_head.html", {"title": "话题详情页"})
+    <link rel="stylesheet" href="../../css/weibo.min.css">
+</head>
+@@include("../_public/_js.html")
+<body>
+@@include("../_public/_nav.html")
+<div class="content-wrapper content-wrapper-add content-wrapper-hook clearfix">
+    <!--浏览器宽度小于992时导航栏右半部结构切换-->
+    @@include("../_public/_change_nav.html")
+    <!--自定义样式左右结构-->
+    <div class="part-left">
+        <!--话题-->
+        @@include("_includes/_topic_postbox.html")
+        <!--话题发布框-->
+        @@include("_includes/_quickweibo.html")
+        <!--动态列表-->
+        @@include("_includes/_detaillist.html")
+    </div>
+    <div class="part-right part-right-hook" data-state="0" data-show="true">
+        <!--话题主持人-->
+        <div class="cell pb-10px mb-20px">
+            <div class="topic-title clearfix">
+                <div class="title-wrap">
+                    <i class="fa fa-commenting"></i>话题主持人
+                </div>
+            </div>
+            @@include("_includes/_topic_compere.html")
+        </div>
+        <!--管理面板-->
+        <div class="cell">
+            <div class="topic-title clearfix">
+                <div class="title-wrap">
+                    <i class="fa fa-th-large"></i>管理面板
+                </div>
+            </div>
+            @@include("_includes/_topic_manage.html")
+        </div>
+
+    </div>
+
+</div>
+@@include("../_public/_footer.html")
+@@include("../_public/_backtop.html")
+</body>
+</html>

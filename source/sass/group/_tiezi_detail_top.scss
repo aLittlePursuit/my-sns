@@ -1,0 +1,90 @@
+.tiezi-detail-wrapper {
+    position: relative;
+    padding: 20px 0 70px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.tiezi-detail-head {
+    .goback-group {
+        margin-bottom: 15px;
+        color: #59c8a7;
+        font-size: 14px;
+        a {
+            font-size: 14px;
+            color: #59c8a7;
+        }
+    }
+    .main-title {
+        .title {
+            vertical-align: top;
+            line-height: 18px;
+        }
+        .mian-from {
+            position: relative;
+            margin-bottom: 50px;
+            font-size: 0;
+            > span {
+                position: relative;
+                font-size: 12px;
+                padding: 0 10px;
+                vertical-align: middle;
+                color: #a9a9a9;
+                &:after {
+                    position: absolute;
+                    top: 2px;
+                    right: 0;
+                    content: '';
+                    width: 1px;
+                    height: 10px;
+                    background: #ebebeb;
+                }
+                &:first-child {
+                    padding-left: 5px !important;
+                }
+                &:last-child:after {
+                    width: 0;
+                }
+            }
+            .choose-top {
+                position: absolute;
+                right: 0;
+                > a {
+                    padding: 0 8px;
+                    font-size: 12px !important;
+                    color: #e94369;
+                    border: 1px solid #e94369;
+                    border-radius: 2px;
+                    &:hover {
+                        background: #e94369;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tiezi-detail-content {
+    min-height: 250px;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.tiezi-detail-foot {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    font-size: 0;
+    text-align: right;
+    > a {
+        margin-left: 20px;
+        font-size: 12px;
+        color: #999999;
+        .fa {
+            font-size: 14px;
+        }
+        &:hover {
+            color: #4fbcdb;
+        }
+    }
+}

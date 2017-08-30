@@ -1,0 +1,38 @@
+<div class="manage-panel clearfix">
+    <form role="form" action="" method="post" class="">
+        <div class="form-group">
+            <div class="">主持人设置项(以下选项仅主持人可设置)</div>
+            <label for="avatar">话题图片(180px*180px)</label>
+            <div>
+                <a class="btn">选择文件</a>
+                <span>(建议最小尺寸300*300px，只支持JPG、PNG、GIF格式，大小不超过2M)</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="qrcode">话题二维码(220px*220px)</label>
+            <div>
+                <a class="btn">选择文件</a>
+                <span>(建议最小尺寸300*300px，只支持JPG、PNG、GIF格式，大小不超过2M)</span>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="intro">话题导语</label>
+            <textarea class="form-control" id="intro" name="intro" placeholder="输入话题导语"></textarea>
+        </div>
+        <div>
+            <div class="">管理员设置项(以下选项仅管理员可设置)</div>
+            <div class="form-group">
+                <label for="intro">主持人UID</label>
+                <input type="text" class="form-control" id="uadmin" name="uadmin" placeholder="" value="0">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" value="1" id="top" name="is_top" checked>
+                <label for="top">是否为推荐话题</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">设置</button>
+        </div>
+    </form>
+</div>

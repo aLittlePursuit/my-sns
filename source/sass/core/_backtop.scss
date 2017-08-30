@@ -1,0 +1,14 @@
+.backtop {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 46px;
+    height: 45px;
+    z-index: 1000;
+    cursor: pointer;
+    overflow: hidden;
+    .icons {
+        position: relative;
+    }
+}

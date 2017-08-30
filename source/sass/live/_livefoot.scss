@@ -1,0 +1,33 @@
+.live-foot {
+    position: relative;
+    .live-details {
+        margin-right: 15px;
+        background: #fff;
+        @media (max-width: 992px) {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
+    .live-notice {
+        background: #fff;
+    }
+    .title {
+        padding: 0 20px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 16px;
+        font-weight: 700;
+        border-bottom: 1px solid #f0f0f0;
+        &.title-bg {
+            background: #ffeacc;
+        }
+    }
+    .content {
+        padding: 20px;
+        text-indent: 2em;
+        min-height: 100px;
+        &.content-bg {
+            background:  #fff5e6;
+        }
+    }
+}

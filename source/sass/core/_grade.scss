@@ -1,0 +1,90 @@
+.topic-title {
+    height: 45px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #e1e5ea;
+    .title-wrap {
+        display: inline-block;
+        line-height: 45px;
+        > a {
+            font-size: 14px;
+            color: #a5aeb8;
+        }
+        .fa {
+            display: inline-block;
+            margin-right: 12px;
+            line-height: 40px;
+            font-size: 18px;
+            color: #ebaa4c;
+            border-bottom: 2px solid #ebaa4c;
+        }
+    }
+}
+
+
+
+.my-community {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    .check {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+    }
+    .self-grade {
+        margin-top: 15px;
+        font-size: 16px;
+        color: #666;
+    }
+    .grade-box {
+        padding: 25px 0 5px 0;
+        margin: 0;
+        border-bottom: 1px solid #e4e4e4;
+        .upgrade {
+            .grade-bottom {
+                border-top: 7px solid #eee;
+            }
+            .grade-top {
+                border-top: 7px solid #1ABC9C;
+                margin-top: -7px;
+                z-index: 9999;
+            }
+        }
+        .gg-wrap {
+            padding: 5px 0;
+            font-size: 12px;
+            > p {
+                margin: 0;
+            }
+        }
+    }
+    .gg-check {
+        margin: 0;
+        max-height: 78px;
+        overflow: hidden;
+        .c-box {
+            padding: 10px;
+            .signIn {
+                display: inline-block;
+                margin-right: 11px;
+                cursor: pointer;
+            }
+            .ranking {
+                display: inline-block;
+                margin-left: 11px;
+            }
+            p {
+                padding: 0 2px 0 3px;
+                margin-bottom: 0;
+                color: #999;
+                font-size: 14px;
+            }
+            &:hover .pc6 {
+                color: #666;
+            }
+        }
+    }
+}
+
+

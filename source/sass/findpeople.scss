@@ -1,0 +1,19 @@
+@import "findpeople/choosefind";
+@import "findpeople/personlist";
+@import "findpeople/popularlist";
+@import "findpeople/friend_attentionlist";
+@import "findpeople/recommendlist";
+
+@import "findpeople/weixin";
+@import "findpeople/weixin2";
+
+
+
+
+
+
+
+
+
+@import "icon/sprite-findpeople";
+@include sprites($spritesheet-sprites);

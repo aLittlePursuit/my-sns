@@ -1,0 +1,73 @@
+<div class="send-weibo clearfix ml-30px">
+    <div class="send-weibo-left">
+        <div class="change-box change-box1 active">
+            <span class="icons icons-trends"></span>
+        </div>
+        <div class="change-box change-box2">
+            <span class="icons icons-write-artical"></span>
+        </div>
+    </div>
+    <div class="send-weibo-right" >
+        <div class="tabContent1" id="tabContent1">
+            <div><textarea class="form-control" placeholder="请输入内容" id="weibo_content"></textarea></div>
+            <div class="content1-footer clearfix">
+                <span>
+                    <a href="#javascript:;" id="insert_image">
+                        <i class="fa fa-image"></i> 图片
+                    </a>
+                </span>
+                <span>
+                    <a href="#javascript:;" id="insert_video">
+                        <i class="fa fa-caret-square-o-right"></i> 视频
+                    </a>
+                </span>
+                <span>
+                    <a href="#javascript:;">
+                        <i class="fa fa-smile-o"></i> 表情
+                    </a>
+                </span>
+                <span>
+                    <a href="#javascript:;">
+                        <i class="fa fa-pencil"></i> 话题
+                    </a>
+                </span>
+                <button class="btn btn-success pull-right" id="send_short_weibo">
+                    <i class="fa fa-edit"></i> 发布
+                </button>
+            </div>
+            <div id="emot_content" class="emot_content"></div>
+            <div id="hook_show" class="emot_content"></div>
+            <input type="hidden" id="video_id">
+        </div>
+        <div class="tabContent2" id="tabContent2" style="display: none">
+
+            <div>
+                <input class="form-control" id="title" type="text" placeholder="标题...">
+            </div>
+
+            <div id="emot_long_content" class="emot_content"></div>
+            <div class="submit-artical">
+                <button type="button" id="add_weibo" class="btn btn-success">
+                    <i class="fa fa-edit"></i> 发布文章
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    // 点击tab切换样式
+    $('.change-box').click(function() {
+        $('.change-box').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.change-box1').click(function() {
+        $('#tabContent1').fadeIn();
+        $('#tabContent2').css('display','none');
+    });
+    $('.change-box2').click(function() {
+        $('#tabContent1').css('display','none');
+        $('#tabContent2').fadeIn();
+        $(window).resize();
+    });
+</script>

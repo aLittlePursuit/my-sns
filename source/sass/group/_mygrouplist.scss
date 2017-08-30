@@ -1,0 +1,37 @@
+.mygrouplist {
+    background: #fff;
+    .mygrouplist-cell {
+        position: relative;
+        padding: 20px 0;
+        border-bottom: 1px solid #e1e5ea;
+        &:last-child {
+            border-bottom: none;
+        }
+        .avatar {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+        }
+        .content {
+            margin-left: 60px;
+            padding-left: 20px;
+            vertical-align: top;
+            height: 60px;
+            overflow: hidden;
+            .title {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .text {
+                height: 40px;
+                color: #666;
+                word-break: break-all;
+                overflow: hidden;
+            }
+        }
+    }
+}

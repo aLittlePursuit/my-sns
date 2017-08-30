@@ -1,0 +1,194 @@
+.choosefind {
+  padding: 20px 0; }
+
+.personlist {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee; }
+  .personlist:last-child {
+    border-bottom: none; }
+  .personlist .oneperson {
+    height: 80px; }
+    .personlist .oneperson .avatar {
+      display: inline-block; }
+    .personlist .oneperson .name {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 20px;
+      max-width: 116px;
+      line-height: 80px; }
+    .personlist .oneperson .fans {
+      max-width: 50%; }
+    .personlist .oneperson .score {
+      max-width: 50%; }
+  .personlist .person-post,
+  .personlist .person-fans {
+    line-height: 27px; }
+  .personlist .person-attention {
+    padding-top: 25px; }
+    .personlist .person-attention .btn {
+      width: 80px; }
+
+.popularlist {
+  padding: 10px 0; }
+  .popularlist .popularlist-cell {
+    position: relative;
+    padding: 10px 0; }
+    .popularlist .popularlist-cell .rank,
+    .popularlist .popularlist-cell .fans-rank {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 60px; }
+    .popularlist .popularlist-cell .rank .icons-No1 {
+      position: relative;
+      top: 5px;
+      margin-right: 15px; }
+    .popularlist .popularlist-cell .rank .rank-sign {
+      display: inline-block;
+      margin-right: 15px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 50%;
+      color: #333;
+      background: #f4f4f4; }
+      .popularlist .popularlist-cell .rank .rank-sign.rank-reward {
+        color: #fff;
+        background: #ff4800; }
+    .popularlist .popularlist-cell .avatar-circle {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 157px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      .popularlist .popularlist-cell .avatar-circle > a {
+        margin-right: 5px;
+        color: #333; }
+    .popularlist .popularlist-cell .fans-rank .fans-count {
+      display: inline-block;
+      min-width: 29px; }
+
+.attentionlist {
+  padding: 10px 0; }
+  .attentionlist .attentionlist-cell {
+    position: relative;
+    padding: 10px 0; }
+    .attentionlist .attentionlist-cell .avatar {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      overflow: hidden; }
+    .attentionlist .attentionlist-cell .content {
+      margin-left: 60px;
+      padding-left: 20px;
+      vertical-align: top;
+      height: 60px;
+      overflow: hidden; }
+      .attentionlist .attentionlist-cell .content .name {
+        position: relative;
+        margin-top: 10px; }
+        .attentionlist .attentionlist-cell .content .name > a {
+          color: #333; }
+      .attentionlist .attentionlist-cell .content .post > span {
+        margin-right: 10px; }
+
+.recommendlist {
+  padding: 10px 0; }
+  .recommendlist .recommendlist-cell {
+    position: relative;
+    padding: 10px 0; }
+    .recommendlist .recommendlist-cell .intro {
+      position: relative;
+      margin-bottom: 5px;
+      line-height: 20px; }
+      .recommendlist .recommendlist-cell .intro .name {
+        vertical-align: top;
+        color: #333;
+        font-weight: 700; }
+      .recommendlist .recommendlist-cell .intro .grade {
+        font-weight: 700; }
+      .recommendlist .recommendlist-cell .intro .label {
+        margin-bottom: 0;
+        vertical-align: top; }
+      .recommendlist .recommendlist-cell .intro .add-attention {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #59c8a7;
+        font-size: 20px;
+        cursor: pointer; }
+    .recommendlist .recommendlist-cell .post > span {
+      margin-right: 10px; }
+
+.clearfix:before,
+.clearfix:after {
+  /* 1 */
+  display: table;
+  content: " ";
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+.wrapper {
+  position: relative;
+  width: 100%; }
+  .wrapper .title {
+    text-align: center;
+    line-height: 44px;
+    height: 44px;
+    color: #fff;
+    background: #59c8a7; }
+  .wrapper .form-wrapper {
+    padding: 15px 20px; }
+    .wrapper .form-wrapper .btn {
+      padding: 10px 12px; }
+    .wrapper .form-wrapper input {
+      height: 42px;
+      box-shadow: none;
+      border-radius: 2px; }
+      .wrapper .form-wrapper input:focus {
+        border-color: #59c8a7; }
+    .wrapper .form-wrapper .get-code > input {
+      display: inline-block;
+      width: 48%; }
+    .wrapper .form-wrapper .get-code > a.btn {
+      float: right;
+      width: 48%; }
+    .wrapper .form-wrapper .btn-register {
+      width: 100%; }
+
+.icons-alipay {
+  background-image: url(../../images/findpeople/sprite-findpeople.png);
+  background-position: -228px -50px;
+  width: 158px;
+  height: 48px; }
+
+.icons-logo {
+  background-image: url(../../images/findpeople/sprite-findpeople.png);
+  background-position: -228px 0px;
+  width: 200px;
+  height: 50px; }
+
+.icons-phone-bg {
+  background-image: url(../../images/findpeople/sprite-findpeople.png);
+  background-position: 0px 0px;
+  width: 228px;
+  height: 292px; }
+
+.icons-wechat-green {
+  background-image: url(../../images/findpeople/sprite-findpeople.png);
+  background-position: -386px -50px;
+  width: 30px;
+  height: 30px; }
+
+.icons-wechat {
+  background-image: url(../../images/findpeople/sprite-findpeople.png);
+  background-position: -228px -98px;
+  width: 158px;
+  height: 48px; }
+
+/*# sourceMappingURL=findpeople.css.map */
